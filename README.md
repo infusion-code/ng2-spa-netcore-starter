@@ -14,7 +14,7 @@ Follow these five easy steps to get going:
 
 You should see something like this:
 
-![Startup](/infusion-code/ng2-spa-netcore-starter/blob/master/wwwroot/static/media/startup.png?raw=true "Startup")
+![Startup](/wwwroot/static/media/startup.png?raw=true "Startup")
 
 Start playing around...
 
