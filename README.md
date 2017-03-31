@@ -17,11 +17,17 @@ Follow these five easy steps to get going:
     3. Execute git clone https://github.com/infusion-code/ng2-spa-netcore-starter.git. This will create a local git repository. 
 5. Open the folder containing the repo created in step 4 with VS Code. 
     1. Open the integrated terminal (Ctrl+`).
-    2. Restore nuget packaged by executing 'donet restore'
+    2. Restore nuget packaged by executing 'dotnet restore'
     3. Restore npm packages by executing 'npm install'
     4. Install webpack globally by executing 'npm install -g webpack'
     5. Create the vendor package (since this package does not change often, it is not part of the build process) by executing 'webpack --config webpack.config.vendor.js'
-    6. Press Ctrl-Shift-D to get into the debugger. Click on the green launch arrow to build, start the Kestrel server (localhost:5000) and launch Chrome in private mode connecting to server. 
+    6. Press Ctrl-Shift-D to get into the debugger. Click on the green launch arrow to build, start the Kestrel server (localhost:5000) and launch Chrome in private mode connecting to server.
+    
+'''
+Note: At step 5.vi, if you receive 'error run debug: download .net core debugger', do the following:
+       - close and re-open VS Code and the project
+       - Open one of the cs files in VS Code (such as Startup.cs). This will trigger the download and install.
+'''
 
 You should see something like this:
 
