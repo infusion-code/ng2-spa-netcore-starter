@@ -37,7 +37,19 @@ You should see something like this:
 
 ![Startup](/wwwroot/static/media/startup.png?raw=true "Startup")
 
-Start playing around...
+# Start playing around
+
+The starter include .NET Core and Web Pack hot module replacement (HCR). This means you can make changes in the angular portion in VS Code and upon saving, the changes will be reflected in the browser without restarting the debugger. Try it out by opening ClientApp\app\components\helloworld.ts and change 
+
+```typescript
+<h1>Hello World</h1>
+```
+to
+```typescript
+<h1>Hot Module Replacement Rocks</h1>
+```
+Save helloworld.ts (Ctrl-s) and watch the page update in Chrome...
+
 
 # Learning More
 
