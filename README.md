@@ -7,17 +7,51 @@ This repository contains a VS Code starter project for Angular2 and .NET Core. I
 Follow these five easy steps to get going:
 
 1. Install .NET Core 1.1. You can find it at https://www.microsoft.com/net/download/core
+
 2. Install Visual Studio Code. You can find it at https://code.visualstudio.com/Download (this will also give you node)
+   1. Install git from https://git-scm.com/download/win. You will need it clone this repository.
+   2. Install the  C# extension from https://marketplace.visualstudio.com/items?itemName=ms-vscode.csharp, you will need it to compile the .NET Core backend. 
+
 3. Update Node.js and npm to reasonable versions. Easiest is to simple re-install the latest LTS from https://nodejs.org/en/. 
-4. Clone this repo locally. 
-5. Open the folder containing the repo with VS Code. Press Ctrl-Shift-D to get into the debugger. Clike on the green launch arrow to build, start the Kestrel server (localhost:5000) and launch Chrome in private mode connecting to server. 
+
+4. Clone this repo locally.
+    1. Open VS Code in a folder in which you want to create the project clone.
+    2. Open the integrated terminal (Ctrl+`).
+    3. Execute git clone https://github.com/infusion-code/ng2-spa-netcore-starter.git. This will create a local git repository. 
+
+5. Open the folder containing the repo created in step 4 with VS Code. 
+    1. Open the integrated terminal (Ctrl+`).
+    2. Restore nuget packaged by executing 'dotnet restore'
+    3. Restore npm packages by executing 'npm install'
+    4. Install webpack globally by executing 'npm install -g webpack'
+    5. Create the vendor package (since this package does not change often, it is not part of the build process) by executing 'webpack --config webpack.config.vendor.js'
+    6. Press Ctrl-Shift-D to get into the debugger. Click on the green launch arrow to build, start the Kestrel server (localhost:5000) and launch Chrome in private mode connecting to server.
+    
+
+> Note: At step 5.vi, if you receive 'error run debug: download .net core debugger', do the following:
+>       - close and re-open VS Code and the project
+>       - Open one of the cs files in VS Code (such as Startup.cs). This will trigger the download and install.
+
 
 You should see something like this:
 
-[[https://github.com/infusion-code/ng2-spa-netcore-starter/blob/master/startup.png|alt=startup]]
+![Startup](/wwwroot/static/media/startup.png?raw=true "Startup")
 
-Start playing around...
+# Start playing around
+
+The starter include .NET Core and Web Pack hot module replacement (HCR). This means you can make changes in the angular portion in VS Code and upon saving, the changes will be reflected in the browser without restarting the debugger. Try it out by opening ClientApp\app\components\helloworld.ts and change 
+
+```typescript
+<h1>Hello World</h1>
+```
+to
+```typescript
+<h1>Hot Module Replacement Rocks</h1>
+```
+Save helloworld.ts (Ctrl-s) and watch the page update in Chrome...
+
 
 # Learning More
 
 The [Wiki](https://github.com/infusion-code/ng2-spa-netcore-starter/wiki) contains some topics with next steps to get into the development. 
+
