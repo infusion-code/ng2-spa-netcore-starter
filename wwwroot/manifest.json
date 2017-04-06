@@ -1,0 +1,23 @@
+{
+    "short_name": "ng2Starter",
+    "name": "Infusion Angular2 and Net Core Starter App",
+    "description": "This app provides a foundation for development of angular2 apps driven by .NET Core services (please update the manifest.json with appropriate information).",
+    "icons": [{
+            "src": "/static/media/logo_infusion_large.png",
+            "sizes": "143x143",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/media/logo_infusion_medium.png",
+            "sizes": "95x95",
+            "type": "image/png"
+        },
+        {
+            "src": "/static/media/logo_infusion_small.png",
+            "sizes": "70x70",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/home",
+    "display": "standalone"
+}
