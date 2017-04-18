@@ -5,7 +5,7 @@ import { HelloWorldComponent } from '../../components/helloworld';
 import { CardsAndTilesComponent} from '../../components/cards-and-tiles';
 
 export const routes: Routes = [
-    { path: '', redirectTo: 'login', pathMatch: 'full' },   
+    { path: '', redirectTo: 'home', pathMatch: 'full' },   
     { path: 'home', component: HelloWorldComponent, pathMatch: 'full', data: { breadcrumb: 'Getting started with ng2 and NetCore' } },
     { path: 'error', component: ErrorComponent, data: { breadcrumb: 'Error' } },
     { path: 'nav1', component: CardsAndTilesComponent, data: { breadcrumb: 'Cards and Tiles'}},

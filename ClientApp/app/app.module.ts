@@ -17,7 +17,7 @@ import { ErrorService } from './services/errorService';
     declarations: [ ErrorComponent, HelloWorldComponent, CardsAndTilesComponent ],
     imports: [
         UniversalModule, // Must be first import. This automatically imports BrowserModule, HttpModule, and JsonpModule too.
-        AppScaffoldModule,
+        AppScaffoldModule.forRoot(),
         AppRoutingModule,
         TilesAndCardsModule
     ],
@@ -25,5 +25,4 @@ import { ErrorService } from './services/errorService';
         ErrorService,
     ]
 })
-export class AppModule {    
-}
+export class AppModule { }
