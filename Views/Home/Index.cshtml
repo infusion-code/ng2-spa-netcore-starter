@@ -1,7 +1,7 @@
 @{
     ViewData["Title"] = "Infusion - Angular2 NetCore Starter";
 }
-<app><div asp-prerender-module="ClientApp/dist/main-server" style="padding: 50px 0; margin-left: 50%; margin-right: 50%;">Loading...</div></app>
+<app asp-prerender-module="ClientApp/dist/main-server"><div style="padding: 50px 0; margin-left: 50%; margin-right: 50%;">Loading...</div></app>
 <script src="~/dist/vendor.js" asp-append-version="true"></script>
 @section scripts {
     <script src="~/dist/main-client.js" asp-append-version="true"></script>
